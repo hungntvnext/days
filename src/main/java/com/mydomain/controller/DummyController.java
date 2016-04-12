@@ -172,7 +172,7 @@ ObjectData obj;
 	}
     	File CallRestWithUrl( String requestBody) {
     		try {
-    			String urlRest="http://localhost:8080/jasperserver/rest/pdf/GK0402";
+    			String urlRest="http://localhost:8080/jasperserver/rest/pdf/Onlytest";
     			HttpClient httpClient = new DefaultHttpClient();
     			HttpPost postRequest = new HttpPost(urlRest);
 
@@ -217,7 +217,7 @@ ObjectData obj;
     	}
     
     //-------------
-    	void GK0402(HttpServletRequest request,
+    	void Onlytest(HttpServletRequest request,
     			HttpServletResponse response)throws Exception{
     		 String str = FileUtils.readFileToString(new File("D://day5/data.txt"));
     		 System.err.println(str+" =My data");
@@ -245,7 +245,7 @@ ObjectData obj;
     		 System.err.println(jsonCartList);
     		// exportPDF(jsonCartList, parameters, request, response);
     		// CallRestWithUrl(jsonCartList);
-    		 GK0402(request,response);
+    		 Onlytest(request,response);
     	} catch (Exception e) {
     		e.printStackTrace();
     	}

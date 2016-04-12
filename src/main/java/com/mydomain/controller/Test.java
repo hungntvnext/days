@@ -50,7 +50,7 @@ public class Test {
             
             String url = "jdbc:mysql://localhost:3306/test";
             String username = "root";
-            String password = "admin123";
+            String password = "xxxxx";
             connection = DriverManager.getConnection(url, username, password);
         } catch (ClassNotFoundException e) {
             System.err.println("Could not find the database driver");
